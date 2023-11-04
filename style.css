@@ -120,7 +120,24 @@ p {
 }
 
 .section-p1 {
-  padding: 0px 80px;
+  padding: 40px 80px;
+}
+.section-m1 {
+  margin: 40px 0;
+}
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.2sec;
+}
+body {
+  width: 100%;
 }
 
 #feature {
@@ -170,25 +187,113 @@ p {
   background-color: #fff2e5;
 }
 
-#product1 h2,
-p {
+/* for product */
+
+#product1 {
   text-align: center;
 }
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 
-#product .pro-container .pro {
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
-  border: 1px solid #8e928f;
+  border: 1px solid #cce7d0;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  height: 60vh;
 }
-#product .pro-container .pro:hover {
+#product1 .pro:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
-#product .pro-container .pro img {
-  width: 100%;
+#product1 .pro img {
+  width: 80%;
   border-radius: 25px;
+  height: 40vh;
+}
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span {
+  color: #606063;
+  font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+#product1 .pro .des i {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 500px;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: relative;
+  left: 100px;
+  bottom: 50px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* banner */
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(" https://img.freepik.com/free-photo/front-view-sale-word-bag-with-black-background_23-2148281053.jpg?w=740&t=st=1699102208~exp=1699102808~hmac=12096e218ac1c47b4b878a3868699ca8fce2facbfc059dffa94d692f6ddd3920");
+  width: 100%;
+  height: 30vh;
+  background-size: auto auto cover;
+  background-position: center;
+}
+
+#banner h4 {
+  color: #fff;
+  font-size: 16px;
+}
+#banner h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+#banner h2 span {
+  color: red;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#banner button:hover {
+  background: #088178;
+  color: white;
 }
