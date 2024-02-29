@@ -512,3 +512,46 @@ footer .copyright {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+
+
+
+/* Media query for screens larger than 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  #header {
+    /* padding: 30px; */
+  }
+
+  #navbar {
+    /* padding: 20px; */
+  }
+
+  #hero {
+    padding: 50px;
+  }
+
+  #hero #hero1,
+  #hero #hero2 {
+    padding: 0 20px;
+  }
+
+  #hero #hero2 {
+    height: 400px; /* Adjust the height as needed */
+  }
+
+  #content {
+    padding: 30px;
+  }
+
+  /* Adjustments for New Arrival section on larger screens */
+  #new-arrival {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  #new-arrival .item {
+    flex: 1;
+    margin: 0 10px;
+  }
+}
