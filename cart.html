@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .cart-items {
+            padding: 20px;
+        }
+        .cart-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .cart-item img {
+            float: left;
+            margin-right: 10px;
+        }
+        .cart-item .item-details {
+            float: left;
+            width: calc(100% - 90px);
+        }
+        .cart-item .item-details h3 {
+            margin-top: 0;
+        }
+        .cart-item .item-details p {
+            margin: 5px 0;
+        }
+        .cart-item .item-actions {
+            float: right;
+        }
+        .cart-item .item-actions button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cart-item .item-actions button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="images/product-4.jpeg" alt="Product Image">
+                <div class="item-details">
+                    <h3>Product 1</h3>
+                    <p>Price: $10.00</p>
+                    <p>Quantity: 1</p>
+                </div>a
+                <div class="item-actions">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="images/product-1.jpeg" alt="Product Image">
+                <div class="item-details">
+                    <h3>Product 2</h3>
+                    <p>Price: $20.00</p>
+                    <p>Quantity: 2</p>
+                </div>
+                <div class="item-actions">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Shopping Cart</p>
+    </footer>
+</body>
+</html>
