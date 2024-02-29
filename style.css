@@ -497,3 +497,18 @@ footer .copyright {
   width: 100%;
   text-align: center;
 }
+
+.bg-app_store {
+  width: 294px; height: 189px;
+  background: url('images/css_sprites.png') ;
+ 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bg-play_store {
+  width: 300px; height: 89px;
+  background: url('images/css_sprites.png') -524px -10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
